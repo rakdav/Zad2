@@ -13,9 +13,12 @@
         <TextBox x:Name="VocationText" DockPanel.Dock="Top"/>
         <Label Content="Введите оклад" DockPanel.Dock="Top"/>
         <TextBox x:Name="OkladText" DockPanel.Dock="Top"/>
+        <Label Content="Введите рейтинг" DockPanel.Dock="Top"/>
+        <TextBox x:Name="ScaleText" DockPanel.Dock="Top"/>
         <StackPanel Orientation="Horizontal" DockPanel.Dock="Top" HorizontalAlignment="Center">
             <Button Content="Оклад+15" Margin="10 0" Click="ButtonBase_OnClick1"></Button>
             <Button Content="Должность+" Click="ButtonBase_OnClick2"></Button>
+            <Button Content="Оклад по рейтингу" Click="ButtonBase_OnClick3"></Button>
         </StackPanel>
         <TextBlock DockPanel.Dock="Bottom" x:Name="Result"/>
     </DockPanel>

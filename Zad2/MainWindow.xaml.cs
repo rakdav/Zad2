@@ -38,5 +38,12 @@ namespace Zad2
             employ.ToIngener();
             Result.Text = employ.Print();
         }
+
+        private void ButtonBase_OnClick3(object sender, RoutedEventArgs e)
+        {
+            Employ employ = new Employs(FirstNameText.Text, VocationText.Text, double.Parse(OkladText.Text),int.Parse(ScaleText.Text));
+            employ.AddOklad();
+            Result.Text = employ.Print();
+        }
     }
 }
